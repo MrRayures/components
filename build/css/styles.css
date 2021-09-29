@@ -1,0 +1,17 @@
+/*
+* Main stylesheet
+*/
+.c-alert {
+  background-color: black;
+  padding: 10px;
+  color: #FFF;
+}
+
+.c-alert--warning {
+  background-color: #cc0000;
+}
+
+.c-alert--info {
+  background-color: #333;
+}
+/*# sourceMappingURL=map/styles.css.map */

@@ -1,0 +1,15 @@
+.c-alert {
+  background-color: blue;
+  padding: 10px;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.c-alert--warning {
+  background-color: #cc0000;
+}
+
+.c-alert--info {
+  background-color: #333;
+}

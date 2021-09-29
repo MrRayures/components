@@ -1,0 +1,24 @@
+{
+  "title": "Alerte",
+  "status": "wip",
+  "context": {
+    "text": "This is an example alert!"
+  },
+  "variants":[
+    {
+			"name": "info",
+        "context": {
+        "modifier": "info",
+        "text": "This is a info banner"
+      }
+		},
+    {
+			"name": "warning",
+        "context": {
+        "modifier": "warning",
+        "text": "This is a warning banner"
+      }
+		}
+  ]
+}
+    
