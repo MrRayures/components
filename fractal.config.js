@@ -7,27 +7,35 @@ const mandelbrot = require('@frctl/mandelbrot');
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Fractal Nunjucks example');
+fractal.set('project.title', 'Librairie de composants');
+fractal.set('project.version', 'v1.0');
+fractal.set('project.author', 'Francois Leproust');
+
 
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'src/components'));
-fractal.components.set('title', 'Composants'); // default is 'Components'
-fractal.components.set('ext', '.html');
 fractal.components.engine(require('@frctl/nunjucks'));
+fractal.components.set('path', path.join(__dirname, 'src/components'));
+fractal.components.set('label', 'Styleguide'); // default is 'Components'
+fractal.components.set('default.collated', true); // default is false
+fractal.components.set('ext', '.html');
+
 
 
 /*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'src/docs'));
+fractal.docs.set('indexLabel', 'Documentation');
 fractal.docs.engine(require('@frctl/nunjucks'));
+
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
 fractal.web.set('static.path', path.join(__dirname, 'src/assets'));
+
 
 /*
  * Tell the Fractal where to output the build files.
@@ -52,10 +60,10 @@ fractal.web.set('server.watch', true);
 fractal.web.theme(
   mandelbrot({
     skin: {
-      name: 'default',
-      //accent: '#000',
+      name: 'black',
+      //accent: '#333333',
       //complement: '#FFFFFF',
-      //links: '#ff000',
+      //links: '#000000',
     },
     information: [
       {
