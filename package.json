@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.5.6",
-    "@frctl/nunjucks": "^2.0.10"
+    "@frctl/nunjucks": "^2.0.10",
+    "get-sass-vars": "^3.2.1"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

@@ -18,7 +18,7 @@ fractal.set('project.author', 'Francois Leproust');
 fractal.components.engine(require('@frctl/nunjucks'));
 fractal.components.set('path', path.join(__dirname, 'src/components'));
 fractal.components.set('label', 'Styleguide'); // default is 'Components'
-fractal.components.set('default.collated', true); // default is false
+fractal.components.set('default.collated', false); // default is false
 fractal.components.set('ext', '.html');
 
 

@@ -1,0 +1,6 @@
+---
+title: Page d'exemple
+---
+
+
+
